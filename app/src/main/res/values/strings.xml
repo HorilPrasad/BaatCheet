@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatWithMe</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>

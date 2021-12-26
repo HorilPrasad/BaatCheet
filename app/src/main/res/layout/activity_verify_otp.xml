@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".activity.VerifyOtp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/dancingscript_bold"
+        android:padding="5dp"
+        android:text="Verify \n\t\t\t\t\t Your OTP Here...."
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/PinWidget.PinView"
+        app:itemCount="6"
+        android:layout_gravity="center_horizontal"
+        android:cursorVisible="true"
+        app:lineColor="@color/white"
+        android:layout_marginTop="150dp"
+        android:inputType="number"
+        app:cursorColor="@color/teal_700"
+        app:itemRadius="10dp"
+        app:itemWidth="40dp"
+        app:itemHeight="40dp"
+        app:hideLineWhenFilled="false"
+        android:itemBackground="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/verify_otp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submit_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:contentDescription="btn"/>
+
+</LinearLayout>

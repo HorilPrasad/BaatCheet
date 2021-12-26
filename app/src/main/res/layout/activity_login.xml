@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".activity.Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi \n\t\t\t\t Welcome"
+        android:fontFamily="@font/dancingscript_bold"
+        android:textSize="52sp"
+        android:padding="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your\nphone number"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/corner"
+        android:layout_marginTop="40dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="2dp"
+            app:ccp_countryPreference="IN"
+            app:ccp_defaultLanguage="ENGLISH"
+            app:ccp_defaultNameCode="IN"
+            app:ccp_showNameCode="false"/>
+
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:background="@drawable/corner"
+            android:hint="99XXXXXX12"
+            android:autofillHints="phone"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/sent_otp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sent_otp_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:contentDescription="btn"/>
+
+
+</LinearLayout>
